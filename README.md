@@ -1,5 +1,151 @@
 # Coding challenge
 
+## GUIDE
+
+I'll help you create a user guide section at the top of the README.md. First, let me check the current README content:
+
+Read file: README.md
+Let me create a user guide section to be added at the top of the README.md. Here's the content:
+
+````markdown
+# Assessment Reporting System
+
+A TypeScript-based CLI application for generating student assessment reports.
+
+## Quick Start
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+````
+
+2. Build the application:
+
+```bash
+npm run build
+```
+
+3. Run the application:
+
+```bash
+npm start
+```
+
+## Available Reports
+
+The system generates three types of reports:
+
+1. **Diagnostic Report** (Option 1)
+
+   - Shows student's performance by subject strand
+   - Displays correct answers per strand
+   - Helps identify areas of weakness
+
+2. **Progress Report** (Option 2)
+
+   - Shows improvement over time
+   - Lists all completed assessments with dates and scores
+   - Calculates overall improvement
+
+3. **Feedback Report** (Option 3)
+   - Shows detailed feedback for incorrect answers
+   - Provides hints for improvement
+   - Lists correct answers for reference
+
+## Usage
+
+1. Run the application:
+
+```bash
+npm start
+```
+
+2. Enter the required information when prompted:
+   - Student ID (e.g., "student1")
+   - Report type (1, 2, or 3)
+
+Example:
+
+```
+Please enter the following
+Student ID: student1
+Report to generate (1 for Diagnostic, 2 for Progress, 3 for Feedback): 1
+```
+
+## Development
+
+### Prerequisites
+
+- Node.js 20.x or higher
+- npm 9.x or higher
+
+### Available Scripts
+
+- `npm start` - Run the application
+- `npm run build` - Build TypeScript code
+- `npm test` - Run tests
+- `npm run test:watch` - Run tests in watch mode
+- `npm run lint` - Run ESLint
+
+### Project Structure
+
+```
+.
+├── data/                  # JSON data files
+│   ├── students.json     # Student information
+│   ├── assessments.json  # Assessment definitions
+│   ├── questions.json    # Question bank
+│   └── student-responses.json # Student answers
+├── src/
+│   ├── services/        # Business logic
+│   ├── types/          # TypeScript type definitions
+│   └── index.ts        # Application entry point
+└── tests/              # Test files
+```
+
+### Testing
+
+The project includes automated tests for:
+
+- Report generation
+- Data loading
+- Date formatting
+- Score calculations
+
+Run tests with:
+
+```bash
+npm test
+```
+
+### Continuous Integration
+
+The project uses GitHub Actions for CI/CD:
+
+- Runs tests on every push and pull request
+- Ensures code quality with ESLint
+- Builds TypeScript code
+
+## Data Format
+
+The system uses JSON files for data storage:
+
+1. **students.json**: Student information
+2. **assessments.json**: Assessment definitions and question sets
+3. **questions.json**: Question bank with answers and hints
+4. **student-responses.json**: Student answers and scores
+
+## Error Handling
+
+The system handles various error cases:
+
+- Invalid student ID
+- Missing or incomplete assessments
+- Invalid report type selection
+- Data loading errors
+
 With this challenge we hope to learn how you approach technical tasks.
 
 Please read the entirety of this document carefully, paying attention to the 'Requirements', and most importantly the "What we are looking for" sections.
