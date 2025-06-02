@@ -1,0 +1,22 @@
+/node_modules
+/dist
+/build
+/coverage
+/logs
+/temp
+/test-results
+/test-results.xml
+/test-results.xml.gz
+/test-results.xml.gz.part
+/test-results.xml.gz.part.1
+
+# vscode
+.vscode
+*.code-workspace
+
+# env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

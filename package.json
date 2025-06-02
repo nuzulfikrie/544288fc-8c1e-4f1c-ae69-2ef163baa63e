@@ -1,0 +1,37 @@
+{
+  "name": "coding-challenge",
+  "version": "1.0.0",
+  "description": "Assessment reporting system using TypeScript and zx",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "NODE_OPTIONS='--loader ts-node/esm' node src/index.ts",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/broadbandsolutions/coding-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/broadbandsolutions/coding-challenge/issues"
+  },
+  "homepage": "https://bitbucket.org/broadbandsolutions/coding-challenge#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "zx": "^7.2.3"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0"
+  }
+}
