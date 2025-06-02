@@ -4,7 +4,7 @@ import { DataService } from "./services/dataService.js";
 import { ReportService } from "./services/reportService.js";
 import { ReportType } from "./types/index.js";
 
-async function main() {
+async function main(): Promise<void> {
   const dataService = new DataService();
   const reportService = new ReportService(dataService);
 

@@ -1,10 +1,5 @@
 import { DataService } from "./dataService.js";
-import {
-  ReportType,
-  Student,
-  AssessmentResponse,
-  Question,
-} from "../types/index.js";
+import { ReportType, Student, AssessmentResponse } from "../types/index.js";
 import { format, parse } from "date-fns";
 
 export class ReportService {
