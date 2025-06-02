@@ -1,14 +1,6 @@
-# Coding challenge
-
-## GUIDE
-
-I'll help you create a user guide section at the top of the README.md. First, let me check the current README content:
-
-Read file: README.md
-Let me create a user guide section to be added at the top of the README.md. Here's the content:
-
-````markdown
 # Assessment Reporting System
+
+![CI](https://github.com/nuzulfikrie/544288fc-8c1e-4f1c-ae69-2ef163baa63e/actions/workflows/ci.yml/badge.svg)
 
 A TypeScript-based CLI application for generating student assessment reports.
 
@@ -19,7 +11,6 @@ A TypeScript-based CLI application for generating student assessment reports.
 ```bash
 npm install
 ```
-````
 
 2. Build the application:
 

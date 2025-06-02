@@ -32,5 +32,14 @@ jobs:
       - name: Build TypeScript
         run: npm run build
 
-      - name: Run tests
-        run: npm test
+      - name: Run tests and output results
+        run: |
+          npm test > test-results.txt
+
+      - name: Update README with test results
+        run: |
+          head -20 test-results.txt > test-summary.txt
+          awk '/## Test Results/{flag=1;next}/^$/{flag=0}flag' README.md > old-summary.txt || true
+          awk 'NR==1{print; print "\\n## Test Results\\n"; system("cat test-summary.txt"); next} 1' README.md > README.new
+          mv README.new README.md
+        shell: bash
